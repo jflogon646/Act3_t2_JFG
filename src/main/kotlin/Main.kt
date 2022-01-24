@@ -3,7 +3,7 @@ fun calculaVector(primerValor: Int,numPosiciones: Int): List<Int> {
     vector.add(primerValor)
     var siguienteValor = primerValor
     for (i in 1 until numPosiciones) {
-        siguienteValor += 2 * i
+        siguienteValor = 2 * i + primerValor
         vector.add(siguienteValor)
     }
     return vector
